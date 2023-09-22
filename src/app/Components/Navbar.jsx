@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPuzzlePiece } from '@fortawesome/free-solid-svg-icons';
 import { faMagento } from '@fortawesome/free-brands-svg-icons';
-import { faLock } from '@fortawesome/free-solid-svg-icons';
 
 function Navbar() {
   const logoMain = "/src/app/Components/logo.png";

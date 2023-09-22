@@ -69,6 +69,10 @@ const r1 = () => {
             const q8 = team_doc.get("r1q8");
             const q9 = team_doc.get("r1q9");
             const q10 = team_doc.get("r1q10");
+            const q11 = team_doc.get("r1q11");
+            const q12 = team_doc.get("r1q12");
+            const q13 = team_doc.get("r1q13");
+            const q14 = team_doc.get("r1q14");
             if(q1==true){
               console.log("sdgfae");
               count=count+1;
@@ -98,6 +102,18 @@ const r1 = () => {
               count=count+1;
             }
             if(q10==true){
+              count=count+1;
+            }
+            if(q11==true){
+              count=count+1;
+            } 
+            if(q12==true){
+              count=count+1;
+            }
+            if(q13==true){
+              count=count+1;
+            }
+            if(q14==true){
               count=count+1;
             }
             count=count*10;
@@ -462,6 +478,30 @@ const r1 = () => {
                         <button
                         className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
                         onClick={() => addData('r1q13')}>
+                          submit
+                        </button>
+                    </div>
+                </li>
+                <li className={`px-7 py-3 mb-4 mt-3 transition duration-300 ease-in-out opacity-80 transform text-center `}>
+                <div className="mb-2">
+                <p className="text-white text-xl font-bold">Question 14</p>
+                <div>
+                  {teamlist.map((team)=>(
+            <div className="bg-[#01071D] p-3 rounded-md text-left ">
+              <span className='mb-4'>{team.r1q14}</span>
+              </div>))}
+                  </div>       
+                    </div>
+                    <div className="bg-[#01071D] p-3 rounded-md text-left ">
+                      
+                        <input
+                            className="bg-[#292b30] w-full h-16 bg-transparent text-white border-none focus:outline-none mt-10 bg-01071D bg-opacity-72 rounded-md"
+                            placeholder="Enter your answer here..."
+                            onChange={(e) => setans((e).target.value)}
+                        ></input>
+                        <button
+                        className="bg-[#010c34] hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full"
+                        onClick={() => addData('r1q14')}>
                           submit
                         </button>
                     </div>

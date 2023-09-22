@@ -1,11 +1,10 @@
 "use client"
 import Head from 'next/head';
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import {
     getAuth,
     signInWithEmailAndPassword
 } from 'firebase/auth'
-import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 
 import { database} from './config/firebaseConfig';
@@ -44,7 +43,7 @@ export default function Register() {
     }, [])
     return (
       <body class="flex h-screen bg-indigo-700 m-auto">
-        <div class="w-full max-w-xs m-auto bg-indigo-500 rounded p-5 m-auto rounded">
+        <div class="w-full max-w-xs  bg-indigo-500 p-5 m-auto rounded">
           <img class="w-20 h-20 mx-auto mb-5" src="https://ik.imagekit.io/jmd1/logo.png?updatedAt=1695337750981" />
           <Head>
             <title>BINARY BATTLES AUTH</title>
