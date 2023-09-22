@@ -8,7 +8,7 @@ import {
   getDocs,
 } from 'firebase/firestore';
 import { database} from '../../config/firebaseConfig';
-const r1 = () => {
+const R1 = () => {
   const [ans, setans] = useState('');
   const [email, setemail] = useState('');
   const [uid, setuid] = useState('');
@@ -518,4 +518,4 @@ const r1 = () => {
   )
 }
 
-export default r1
+export default R1
